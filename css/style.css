@@ -1,0 +1,850 @@
+
+   1. STYLE GENERAL
+============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #303030;
+    background-color: #1c1c1c;
+}
+
+.site {
+    width: 100%;
+    background-color: #1c1c1c;
+}
+
+
+
+.entete {
+    min-height: 112px;
+    padding: 16px max(20px, calc((100% - 674px) / 2)) 11px;
+    background-color: #fafafa;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+
+
+.logo-zone img {
+    display: block;
+    width: 205px;
+    height: auto;
+}
+
+.logo {
+    margin: 0;
+    font-size: 42px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    line-height: 1;
+    color: #444;
+}
+
+.logo span,
+.logo small,
+.logo-zone p span {
+    color: #ef9c00;
+}
+
+.logo small {
+    font-size: 18px;
+    letter-spacing: 0;
+}
+
+.logo-zone p {
+    margin: 9px 0 0;
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap;
+}
+
+
+
+.menu-zone {
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.bienvenue {
+    margin: 8px 0 40px;
+    font-size: 14px;
+}
+
+.menu-zone nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+}
+
+.menu-zone a {
+    font-size: 11px;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.menu-zone a:hover {
+    color: #ef9c00;
+}
+
+
+
+.contenu {
+    position: relative;
+    padding-top: 226px;
+    background-color: #1c1c1c;
+}
+
+.banniere {
+    position: absolute;
+    top: 13px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: min(674px, 100%);
+    height: 214px;
+
+    background-image: url("../images/fond-boxe.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.catalogue {
+    width: min(674px, 100%);
+    margin: 0 auto;
+    padding: 28px 68px 93px;
+
+    background-color: #f2f2f2;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 66px;
+    row-gap: 48px;
+}
+
+
+
+.produit {
+    min-width: 0;
+    position: relative;
+    text-align: center;
+}
+
+.produit img {
+    width: 100%;
+    height: 210px;
+    display: block;
+
+    object-fit: contain;
+    background-color: white;
+}
+
+.produit h2 {
+    margin: 0;
+    padding: 7px 2px 10px;
+    background-color: white;
+
+    font-size: 9px;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #171717;
+}
+
+
+
+.promotion {
+    position: absolute;
+    z-index: 2;
+
+    top: 9px;
+    right: -16px;
+
+    padding: 7px 9px;
+    border-radius: 6px;
+
+    background-color: #272727;
+    color: #f0a000;
+
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+
+.achat {
+    margin-top: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+
+    white-space: nowrap;
+}
+
+.bouton {
+    display: inline-block;
+    min-width: 108px;
+    padding: 6px 9px;
+
+    color: white;
+    background: linear-gradient(#474747, #202020);
+
+    font-size: 10px;
+    line-height: 1.1;
+    text-align: center;
+    text-decoration: none;
+}
+
+.bouton:hover {
+    background: #ef9c00;
+}
+
+.achat del {
+    color: #444;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.achat strong {
+    color: #ef9c00;
+    font-size: 17px;
+}
+
+
+
+.pied-page {
+    position: relative;
+
+    background-color: #363636;
+    color: white;
+    text-align: center;
+
+    padding: 42px max(20px, calc((100% - 674px) / 2)) 16px;
+}
+
+
+
+.liens-footer {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 34px;
+    padding: 0 16px;
+    border-radius: 5px;
+
+    background-color: white;
+    white-space: nowrap;
+}
+
+.liens-footer a {
+    display: flex;
+    align-items: center;
+
+    color: #444;
+    font-size: 9px;
+    text-decoration: none;
+}
+
+.liens-footer a:not(:last-child)::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    margin: 0 20px;
+
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.liens-footer a:hover {
+    color: #ef9c00;
+}
+
+
+
+.avantages {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+
+    padding-bottom: 21px;
+    border-bottom: 1px solid #888;
+}
+
+.icone {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background-color: white;
+    color: #ef9c00;
+    font-size: 24px;
+}
+
+.avantage p {
+    margin: 11px 0 0;
+
+    font-size: 8px;
+    line-height: 1.3;
+    color: white;
+}
+
+
+
+.reseaux {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 43px;
+
+    margin-top: 15px;
+
+    font-size: 30px;
+    font-weight: bold;
+    color: #828282;
+}
+
+
+
+.copyright {
+    margin: 18px 0 0;
+    color: #eee;
+    font-size: 9px;
+}
+
+
+
+@media (max-width: 740px) {
+
+    .entete {
+        padding: 16px 20px;
+        gap: 16px;
+    }
+
+    .logo-zone img {
+        width: 180px;
+    }
+
+    .logo-zone p {
+        white-space: normal;
+        font-size: 12px;
+    }
+
+    .menu-zone nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .bienvenue {
+        margin-bottom: 24px;
+    }
+
+    .catalogue {
+        padding: 26px 30px 70px;
+        column-gap: 35px;
+        row-gap: 38px;
+    }
+
+    .pied-page {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+
+@media (max-width: 510px) {
+
+    .entete {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-zone {
+        text-align: left;
+    }
+
+    .bienvenue {
+        margin: 0 0 12px;
+    }
+
+    .contenu {
+        padding-top: 165px;
+    }
+
+    .banniere {
+        top: 0;
+        height: 165px;
+    }
+
+    .catalogue {
+        padding: 22px 14px 60px;
+        column-gap: 14px;
+    }
+
+    .produit img {
+        height: 140px;
+    }
+
+    .produit h2 {
+        font-size: 8px;
+        min-height: 37px;
+    }
+
+    .promotion {
+        top: 5px;
+        right: 0;
+        font-size: 13px;
+        padding: 5px;
+    }
+
+    .achat {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .achat del,
+    .achat strong {
+        font-size: 14px;
+    }
+
+    .avantages {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+
+    .liens-footer {
+        max-width: 95%;
+        padding: 0 9px;
+    }
+
+    .liens-footer a {
+        font-size: 8px;
+    }
+
+    .liens-footer a:not(:last-child)::after {
+        width: 5px;
+        height: 5px;
+        margin: 0 8px;
+    }
+}
+
+
+
+
+/*Qui sommes-nous*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #1c1c1c;
+    color: #303030;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.largeur {
+    width: 82%;
+    max-width: 950px;
+    margin: auto;
+}
+
+
+.entete {
+    background-color: #f8f8f8;
+}
+
+.entete-interieur {
+    min-height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marque img {
+    width: 300px;
+    max-width: 100%;
+}
+
+.marque p {
+    margin: 7px 0 0;
+    font-size: 16px;
+}
+
+.marque p span {
+    color: #f0a000;
+}
+
+.navigation {
+    text-align: right;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bonjour {
+    font-size: 17px;
+}
+
+.navigation nav {
+    display: flex;
+    gap: 28px;
+}
+
+.navigation a {
+    color: #303030;
+    text-decoration: none;
+}
+
+.navigation .actif,
+.navigation a:hover {
+    color: #f0a000;
+}
+
+
+.titre-page {
+    background-color: #242424;
+    color: white;
+    padding: 30px 36px;
+    margin-top: 18px;
+    border-bottom: 4px solid #f0a000;
+}
+
+.titre-page h1 {
+    font-size: 27px;
+    margin: 0 0 4px;
+}
+
+.titre-page p {
+    color: #bdbdbd;
+    margin: 0;
+}
+
+
+.contenu {
+    background-color: #f1f1f1;
+    padding: 30px 36px 50px;
+}
+
+.contenu h2 {
+    font-size: 21px;
+    border-left: 4px solid #f0a000;
+    padding-left: 12px;
+    margin-bottom: 17px;
+}
+
+.contenu p {
+    line-height: 1.65;
+}
+
+.rubrique {
+    margin-top: 28px;
+}
+
+
+.histoire {
+    display: grid;
+    grid-template-columns: 1fr 235px;
+    align-items: center;
+    gap: 25px;
+}
+
+.histoire img {
+    width: 235px;
+    height: 235px;
+    object-fit: contain;
+    background-color: white;
+}
+
+
+.chiffres {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.carte-chiffre {
+    background-color: white;
+    text-align: center;
+    padding: 18px 8px;
+}
+
+.carte-chiffre strong {
+    display: block;
+    color: #f0a000;
+    font-size: 28px;
+}
+
+.carte-chiffre span {
+    font-size: 13px;
+}
+
+
+.equipe {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.personne {
+    background-color: white;
+    text-align: center;
+    padding: 17px 20px;
+}
+
+.avatar {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    background-color: #252525;
+    color: #f0a000;
+    display: grid;
+    place-items: center;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 auto 10px;
+}
+
+.personne h3 {
+    font-size: 16px;
+    margin: 0 0 4px;
+}
+
+.personne p {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+    line-height: 1.3;
+}
+
+
+.magasin {
+    display: grid;
+    grid-template-columns: 0.85fr 1.1fr;
+    gap: 28px;
+}
+
+.magasin h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 6px 9px;
+    text-align: left;
+    font-size: 13px;
+}
+
+th {
+    width: 60%;
+}
+
+
+.carte-magasin {
+    min-height: 235px;
+    background: repeating-linear-gradient(
+        38deg,
+        #e3dfd2 0 12px,
+        white 12px 15px,
+        #e3dfd2 15px 24px
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.carte-magasin a {
+    background-color: white;
+    padding: 9px 14px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #303030;
+    text-decoration: none;
+}
+
+
+.formulaire {
+    background-color: white;
+    padding: 20px 22px;
+}
+
+.champs-ligne {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.champ {
+    margin-bottom: 13px;
+}
+
+.champ label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.champ input,
+.champ select,
+.champ textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.champ select {
+    background-color: #eee;
+}
+
+.champ textarea {
+    resize: vertical;
+}
+
+.accord {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.formulaire button {
+    background-color: #292929;
+    color: white;
+    border: none;
+    padding: 9px 27px;
+    cursor: pointer;
+}
+
+.formulaire button:hover {
+    background-color: #f0a000;
+}
+
+/* PIED DE PAGE */
+.pied-page {
+    background-color: #383838;
+    color: white;
+    text-align: center;
+    padding: 38px 0 24px;
+    position: relative;
+}
+
+
+.liens-footer {
+    position: absolute;
+    top: -19px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    background-color: white;
+    color: #555;
+    padding: 15px 24px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 11px;
+}
+
+.liens-footer a {
+    color: #555;
+    text-decoration: none;
+}
+
+.liens-footer a:hover {
+    color: #f0a000;
+}
+
+.liens-footer span {
+    color: #ccc;
+}
+
+
+.avantages {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 27px;
+    padding: 4px 0 28px;
+    border-bottom: 1px solid #666;
+}
+
+.icone {
+    background-color: white;
+    color: #ed9c00;
+    width: 58px;
+    height: 58px;
+    display: inline-grid;
+    place-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.avantage p {
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.25;
+    margin-top: 10px;
+}
+
+
+.reseaux {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    font-size: 31px;
+    font-weight: bold;
+    color: #767676;
+    margin-top: 15px;
+}
+
+.copyright {
+    font-size: 11px;
+    color: #bbb;
+    margin-top: 10px;
+}
+

@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qui sommes-nous ? - Sport.com</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    
+    <header class="entete">
+        <div class="largeur entete-interieur">
+
+            <div class="marque">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Sport.com">
+                </a>
+                <p>L'équipement des boxeurs
+                    <span>au meilleur prix</span>
+                </p>
+            </div>
+
+            <div class="navigation">
+                <p class="bonjour">Bonjour Salma</p>
+
+                <nav>
+                    <a href="index.html">Catalogue</a>
+                    <a href="qui sommes-nous.html" class="actif">
+                        Qui sommes-nous
+                    </a>
+                    <a href="#contact">Contactez-nous</a>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    
+    <main class="largeur">
+
+        <div class="titre-page">
+            <h1>Qui sommes-nous ?</h1>
+            <p>Une boutique de passionnés, au service
+               des boxeurs depuis 2012.</p>
+        </div>
+
+        <div class="contenu">
+
+            <!-- NOTRE HISTOIRE -->
+            <section class="histoire">
+
+                <div>
+                    <h2>Notre histoire</h2>
+
+                    <p>
+                        Sport.com est né dans une petite
+                        salle de boxe parisienne :
+                        trois entraîneurs lassés de ne pas
+                        trouver de matériel de qualité à un
+                        prix raisonnable ont décidé de le
+                        sélectionner eux-mêmes.
+                    </p>
+
+                    <p>
+                        Aujourd'hui, nous testons chaque gant,
+                        chaque protection et chaque sac de
+                        frappe avant de le proposer en ligne
+                        et dans notre magasin.
+                    </p>
+                </div>
+
+                <img src="images/gant-boxe-1.png"
+                     alt="Gants de boxe rouges">
+
+            </section>
+
+            
+            <section class="rubrique">
+
+                <h2>Nos chiffres clés</h2>
+
+                <div class="chiffres">
+
+                    <div class="carte-chiffre">
+                        <strong>14</strong>
+                        <span>ans d'expérience</span>
+                    </div>
+
+                    <div class="carte-chiffre">
+                        <strong>500</strong>
+                        <span>articles testés</span>
+                    </div>
+
+                    <div class="carte-chiffre">
+                        <strong>32 000</strong>
+                        <span>clients satisfaits</span>
+                    </div>
+
+                    <div class="carte-chiffre">
+                        <strong>48 h</strong>
+                        <span>pour vous livrer</span>
+                    </div>
+
+                </div>
+            </section>
+
+            
+            <section class="rubrique">
+
+                <h2>L'équipe</h2>
+
+                <div class="equipe">
+
+                    <article class="personne">
+                        <div class="avatar">NK</div>
+                        <h3>Nadia K.</h3>
+                        <p>Fondatrice, ancienne championne
+                           de France de boxe anglaise.</p>
+                    </article>
+
+                    <article class="personne">
+                        <div class="avatar">YB</div>
+                        <h3>Yanis B.</h3>
+                        <p>Responsable du magasin
+                           et des essayages.</p>
+                    </article>
+
+                    <article class="personne">
+                        <div class="avatar">LM</div>
+                        <h3>Léa M.</h3>
+                        <p>Service client, répond à vos
+                           messages en 24 heures.</p>
+                    </article>
+
+                </div>
+            </section>
+
+            
+            <section class="rubrique magasin">
+
+                <div class="adresse">
+
+                    <h2>Le magasin</h2>
+
+                    <p>
+                        Sport.com — Boutique Bastille<br>
+                        12 rue de la Roquette<br>
+                        75011 Paris
+                    </p>
+
+                    <h3>Horaires d'ouverture</h3>
+
+                    <table>
+                        <tr>
+                            <th>Lundi</th>
+                            <td>Fermé</td>
+                        </tr>
+                        <tr>
+                            <th>Mardi – vendredi</th>
+                            <td>10 h – 19 h</td>
+                        </tr>
+                        <tr>
+                            <th>Samedi</th>
+                            <td>10 h – 20 h</td>
+                        </tr>
+                        <tr>
+                            <th>Dimanche</th>
+                            <td>Fermé</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <div class="carte-magasin">
+                    <a href="https://www.openstreetmap.org">
+                        📍 Carte OpenStreetMap du magasin
+                    </a>
+                </div>
+
+            </section>
+
+            <!-- CONTACT -->
+            <section class="rubrique" id="contact">
+
+                <h2>Contactez-nous</h2>
+
+                <form class="formulaire" action="#contact">
+
+                    <div class="champs-ligne">
+
+                        <div class="champ">
+                            <label for="nom">Nom et prénom</label>
+                            <input type="text" id="nom" name="nom">
+                        </div>
+
+                        <div class="champ">
+                            <label for="email">
+                                Adresse électronique
+                            </label>
+                            <input type="email" id="email" name="email">
+                        </div>
+
+                    </div>
+
+                    <div class="champ">
+                        <label for="objet">Objet</label>
+
+                        <select id="objet" name="objet">
+                            <option>Question sur un produit</option>
+                            <option>Question sur une commande</option>
+                            <option>Autre demande</option>
+                        </select>
+                    </div>
+
+                    <div class="champ">
+                        <label for="message">Votre message</label>
+                        <textarea id="message" name="message"
+                                  rows="5"></textarea>
+                    </div>
+
+                    <label class="accord">
+                        <input type="checkbox" name="accord">
+                        J'accepte que mes données soient
+                        utilisées pour répondre à ma demande.
+                    </label>
+
+                    <button type="submit">Envoyer</button>
+
+                </form>
+
+            </section>
+
+        </div>
+    </main>
+
+    
+    <footer class="pied-page" id="avantages">
+
+        <nav class="liens-footer">
+
+            <a href="qui sommes-nous.html">
+                Qui sommes-nous
+            </a>
+            <span>●</span>
+
+            <a href="#contact">Contact</a>
+            <span>●</span>
+
+            <a href="#avantages">Assistance</a>
+            <span>●</span>
+
+            <a href="#cgv">CGV</a>
+
+        </nav>
+
+        <div class="largeur bas-interieur">
+
+            <div class="avantages">
+
+                <div class="avantage">
+                    <img src="images/icon-livre.png" alt="icon-livre">
+                    <p>Un catalogue de plus de 500 articles
+                       de boxe anglaise, thaï et MMA.</p>
+                </div>
+
+                <div class="avantage">
+                    <img src="images/icon-camion.png" alt="icon-camion">
+                    <p>Livraison offerte dès 60 € d'achat,
+                       en 48 heures partout en France.</p>
+                </div>
+
+                <div class="avantage">
+                    <img src="images/icon-cadenat.png" alt="icon-cadenat">
+                    <p>Paiement sécurisé par carte bancaire,
+                       en une ou trois fois.</p>
+                </div>
+
+                <div class="avantage">
+                    <img src="images/icon-pouce.png" alt="icon-pouce">
+                    <p>Satisfait ou remboursé pendant
+                       30 jours sur tout le catalogue.</p>
+                </div>
+
+            </div>
+
+            <div class="reseaux">
+                <span><img src="images/icon-facebook.png" alt="icon-facebook"></span>
+                <span><img src="images/icon-twitter (1).png" alt="icon-twitter"></span>
+                <span><img src="images/icon-linkedin.png" alt="icon-linkedin"></span>
+            </div>
+
+            <p class="copyright" id="cgv">
+                © 2026 Sport.com — boutique fictive
+                réalisée en BTS SIO.
+                Tous droits réservés.
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
+
